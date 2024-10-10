@@ -1,0 +1,191 @@
+/* Meletakkan gambar latar di belakang teks */
+body {
+    background-image: url('Hanover_and_Tyke__2_-removebg-preview.png'); /* Ganti dengan path logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Gambar akan menutupi seluruh halaman */
+    background-attachment: fixed; /* Latar belakang tetap saat di-scroll */
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Gaya Header */
+header {
+    display: flex; /* Menyusun logo dan judul secara horizontal */
+    justify-content: space-between; /* Spasi antara logo+judul dan navigasi */
+    align-items: center; /* Pusatkan secara vertikal */
+    background-color: #91b2c1; /* Warna latar belakang header */
+    color: white; /* Warna teks */
+    padding: 1rem; /* Padding di sekitar header */
+}
+
+header .logo {
+    display: flex; /* Menyusun logo dan judul secara horizontal */
+    align-items: center; /* Pusatkan item secara vertikal */
+}
+
+header .logo-image {
+    width: 50px; /* Set lebar untuk gambar logo */
+    height: 30px; /* Pertahankan rasio aspek */
+    margin-right: 10px; /* Spasi antara logo dan judul */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Ukuran font judul */
+    margin: 0; /* Hilangkan margin default */
+}
+
+header nav ul {
+    list-style: none; /* Hilangkan bullet point pada daftar */
+    display: flex; /* Tata tautan secara horizontal */
+}
+
+header nav ul li {
+    margin: 0 1rem; /* Jarak antara item daftar */
+}
+
+header nav ul li a {
+    color: white; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah */
+    padding: 0.5rem; /* Padding pada tautan */
+}
+
+header nav ul li a:hover {
+    background-color: #004d99; /* Warna latar saat hover */
+    border-radius: 5px; /* Sudut melengkung pada hover */
+}
+
+header nav ul li a.active {
+    background-color: #004d99; /* Warna latar untuk tautan aktif */
+    border-radius: 5px; /* Sudut melengkung untuk tautan aktif */
+}
+
+/* Konten dengan teks di atas gambar */
+.content {
+
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan untuk teks */
+    padding: 50px;
+    margin: 50px ; /* Jarak dari tepi halaman */
+    width: 80%;
+    border-radius: 10px; /* Membulatkan sudut konten */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut di sekitar konten */
+}
+
+.intro {
+    text-align: center; /* Memastikan teks di tengah */
+}
+
+.centered-image {
+    max-width: 300px; /* Membatasi lebar maksimum gambar */
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Memastikan tinggi gambar sesuai proporsinya */
+    border-radius: 10px; /* Membuat sudut gambar sedikit melengkung */
+    margin: 200px auto; /* Menambahkan jarak atas/bawah dan menjadikan gambar tengah */
+    display: block; /* Memastikan gambar sebagai block untuk centering */
+    background-color: #004d99; /* Warna latar untuk tautan aktif */
+}
+
+
+/* Gaya untuk hero section */
+#hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero-image {
+    width: 100%;        /* Mengatur lebar gambar agar memenuhi kontainer */
+    height: auto;       /* Tinggi otomatis agar proporsional */
+    max-height: 300px;  /* Batasi tinggi gambar agar tidak terlalu besar */
+    object-fit: cover;  /* Memastikan gambar mengisi area yang tersedia tanpa mengubah proporsi */
+    border-radius: 8px; /* Memberikan sudut yang melengkung pada gambar */
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+#hero p {
+    font-family: 'Times New Roman', Times, serif; /* Mengatur font menjadi Times New Roman */
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    line-height: 1.5; /* Jarak antar baris */
+    text-align: justify; /* Menjadikan teks rata kanan dan kiri */
+}
+
+
+/* Gaya untuk daftar produk */
+#product-list {
+    display: flex;
+    justify-content: center; /* Pusatkan produk di tengah */
+    flex-wrap: wrap; /* Produk akan turun ke baris baru jika melebihi lebar layar */
+    padding: 1rem;
+}
+
+/* Gaya untuk kontainer produk */
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 220px; /* Lebar produk yang seragam */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk gambar produk */
+.product-image {
+    max-width: 400px; /* Membatasi lebar maksimum gambar */
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Memastikan tinggi gambar sesuai proporsinya */
+    border-radius: 15px; /* Membuat sudut gambar melengkung */
+    margin: 20px auto; /* Menambahkan jarak atas/bawah dan menjadikan gambar tengah */
+    display: block; /* Jarak antara gambar dan teks produk */
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.product p:last-child {
+    font-weight: bold;
+}
+
+
+.intro img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+    border-radius: 40%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Kontak-image {
+    max-width: 250px; /* Membatasi lebar maksimum gambar */
+    width: 300%; /* Membuat gambar responsif */
+    height: auto; /* Memastikan tinggi gambar sesuai proporsinya */
+    border-radius: 45px; /* Membuat sudut gambar melengkung */
+    margin: 10px auto; /* Menambahkan jarak atas/bawah dan menjadikan gambar tengah */
+    display: block; /* Memastikan gambar sebagai block untuk centering */
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
